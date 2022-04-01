@@ -51,7 +51,7 @@ class App extends Component {
         })
       }
 
-      //Set latest video with title to view as default 
+      //Set latest video with title to view as default
       const latest = await dvideo.methods.videos(videosCount).call()
       this.setState({
         currentHash: latest.hash,
@@ -119,7 +119,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar 
+        <Navbar
           account={this.state.account}
         />
         { this.state.loading
